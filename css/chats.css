@@ -10,25 +10,30 @@
   text-align: center;
   padding: 0 !important;
   margin: 0 !important;
-  overflow: hidden;
-  /* height: 391px; */
+  /* overflow: hidden; */
+  /* height: 100%; */
+  /* border: 2px solid green; */
   /* border: none; */
   /* border-radius: 10px; */
 }
 .all__msgs {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  margin: 0;
+  position: relative;
   padding: 0%;
-  height: auto;
+  /* height: auto; */
+  /* border: 2px solid goldenrod; */
 }
 .header__msg {
   background-color: rgb(56, 56, 92);
+  height: 11vh;
 }
 .header__msg h6 {
   text-align: start;
 }
 .header__msg span {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Courier New", Courier, monospace;
   font-weight: 700;
   color: rgb(11, 230, 11);
@@ -42,13 +47,18 @@
   font-weight: 900;
   cursor: pointer;
 }
+.messages-case {
+  /* border: 3px solid rgb(25, 5, 92); */
+  height: 79vh;
+}
 /* messages */
 .messages {
-  height: 394px;
-  background-image: url("/img/chat-bg.png");
+  height: 100vh;
+  padding: 0;
+  /* background-image: url("/img/chat-bg.png"); */
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  /* gap: 8px; */
   overflow-y: auto;
   position: relative;
 }
@@ -114,6 +124,7 @@
 }
 .incoming__message-pocket,
 .responding__message-pocket {
+  margin: 5px;
   display: flex;
   flex-direction: column;
   max-width: 70%;
@@ -139,32 +150,29 @@
   text-align: center;
 }
 .input__case {
-  gap: 0;
+  /* border: 1px solid rgb(56, 56, 92); */
+  position: absolute;
+  bottom: 10px;
   display: flex;
-  align-items: center;
-  border: 1px solid rgb(56, 56, 92);
-  border-top: none;
+  justify-content: space-between;
+  width: 98%;
 }
-.input__case input {
-  background-color: rgb(33, 37, 41);
-  border: none;
-  color: rgb(56, 56, 92);
-}
-.input__case input:focus {
-  background-color: rgb(33, 37, 41);
+#input_msg {
   outline: none;
-  border: none;
   box-shadow: none;
-  color: #e3e3f9;
+  border:2px solid #212121;
+  margin: 5px;
+  color: #eef1f5;
 }
-.input__case input::placeholder {
-  color: rgb(103, 103, 206);
+#input_msg::placeholder {
+  color:white;
 }
 
 .tools {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: transparent;
 }
 .tools i {
   margin: 0px 3px 0 3px;
