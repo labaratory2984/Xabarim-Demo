@@ -12,5 +12,5 @@ window.addEventListener("DOMContentLoaded", () => {
   parentBox.prepend(successMessage);
   setTimeout(() => {
     successMessage.remove();
-  }, 3000);
+  }, 4000);
 });
