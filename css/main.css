@@ -106,7 +106,7 @@ header {
 }
 /* Message Box */
 .message__box {
-  background-image: url('/img/chat-bg.png');
+  background-image: url("/img/chat-bg.png");
   background-size: cover;
   /* background-position: center; */
   display: flex;
@@ -125,7 +125,7 @@ p {
   margin: 1px;
 }
 .friend__notification p {
-  line-height: 16px;
+  line-height: 17px;
 }
 .profile__img_notif {
   width: 40px;
