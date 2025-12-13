@@ -405,7 +405,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  gap: 21px;
 }
 .social-networks i {
   font-size: 30px;
@@ -433,7 +433,6 @@ h1 {
 #footer-instagram,
 #footer-telegram,
 #footer-youtube {
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .footer-email {
