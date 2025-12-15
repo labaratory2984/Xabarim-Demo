@@ -4,6 +4,21 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.success__msg {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  align-self: flex-end;
+  z-index: 200;
+  right: 10px;
+  /* width: 50%; */
+}
 .friend__notification div {
   display: flex;
 }
@@ -125,7 +140,7 @@ p {
   margin: 1px;
 }
 .friend__notification p {
-  line-height: 17px;
+  line-height: 16px;
 }
 .profile__img_notif {
   width: 40px;

@@ -1,8 +1,4 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,21 +10,75 @@ body {
   background-size: cover;
 }
 .login__box {
-  width: 350px;
-  height: 370px;
-  border-radius: 10px;
-  background-color: rgb(13, 109, 252);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 70%;
+  border-radius: 1rem;
+  position: relative;
+  backdrop-filter: blur(6px);
   padding: 10px;
+  box-shadow: 0 0 15px 5px rgba(13, 109, 252, 0.4);
+}
+.parent-bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bio-text {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid blue; */
+  height: 90%;
+  width: 100%;
+  padding-top: 28px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+.bio-label {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  background-color: rgb(13, 109, 252);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.red {
+  border: 1px solid red;
+}
+.bio-textarea {
+  resize: none;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
+  padding-left: 30px;
+  outline: none;
+  height: 88%;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  border: 1px solid white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .form__input {
   margin-top: 2px;
   outline: none;
   background-color: #212121;
 }
-.button {
+.form__input:active {
+  outline: none;
+}
+button {
   background-color: blue;
   border: 1px solid blue;
-  border-radius: 8px;
+  border-radius: 29px;
   padding: 6px;
   color: aliceblue;
 }
@@ -43,8 +93,26 @@ footer {
   color: rgb(13, 109, 252);
   padding-top: 10px;
 }
+/* JS */
+.alert-position {
+  position: fixed;
+  z-index: 200;
+  top: -90px;
+}
 @media (max-width: 767.9px) {
   footer p {
     text-align: center;
   }
+}
+.hide {
+  display: none;
+}
+.red {
+  border: 2px solid red;
+}
+.white {
+  border: 2px solid white;
+}
+.yellow {
+  border: 2px solid yellow;
 }

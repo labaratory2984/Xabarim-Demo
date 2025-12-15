@@ -8,17 +8,25 @@ body {
   background-position: center;
   background-size: cover;
 }
+#parent {
+  position: relative;
+}
 .login__box {
-  width: 350px;
-  height: 350px;
-  border-radius: 10px;
-  background-color: rgb(13, 109, 252);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 70%;
+  border-radius: 1rem;
+  position: relative;
+  backdrop-filter: blur(6px);
   padding: 10px;
+  box-shadow: 0 0 15px 5px rgba(13, 109, 252, 0.4);
 }
 .form__input {
   margin-top: 2px;
   outline: none;
-  background-color: #212121;
+  background: #212121 !important;
 }
 .button {
   background-color: blue;
@@ -37,6 +45,33 @@ footer {
   justify-content: center;
   color: rgb(13, 109, 252);
   padding-top: 10px;
+}
+/* JS */
+.alert-position {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  z-index: 9999;
+  pointer-events: none; /* optional */
+  animation: floating 0.2s ease-out;
+}
+@keyframes floating {
+  0% {
+    top: 0; /* juda pastdan keladi */
+    opacity: 0;
+  }
+  70% {
+    top: 45px; /* biroz pastga o'tib ketadi */
+    opacity: 1;
+  }
+  85% {
+    top: 35px; /* tepaga 5px sakraydi */
+  }
+  100% {
+    top: 40px; /* final joyiga tushadi */
+  }
 }
 @media (max-width: 767.9px) {
   footer p {
