@@ -16,44 +16,60 @@
   </head>
   <body class="vh-100 vw-100">
     <div
-      class="container-fluid h-100 w-100 d-flex justify-content-center align-items-center flex-column p-0 position-relative">
-      <div class="row border border-primary login__box">
+      class="container-fluid h-100 w-100 d-flex justify-content-center align-items-center flex-column p-0 position-relative"
+      id="parent">
+      <!-- First form -->
+      <div class="row border border-dark login__box">
+        <div class="col-12">
+          <h1 class="text-center text-primary">Login</h1>
+        </div>
+
         <div class="col-12">
           <form>
-            <h1 class="text-center text-dark">Login</h1>
-            <form class="input__box">
-              <label for="email" class="text-white">E-mail:</label>
+            <div class="form-floating py-2">
               <input
-                type="email"
-                class="form-control form__input"
-                id="email"
-                placeholder="Insert Email" />
-              <label for="password" class="text-white">Password:</label>
+                type="text"
+                class="form-control border border-primary text-white form__input"
+                id="username"
+                placeholder="Name"
+                name="username" />
+              <label for="username" class="text-primary">Username</label>
+            </div>
+            <div class="form-floating py-2">
               <input
                 type="password"
-                class="form-control form__input"
+                class="form-control border border-primary text-white form__input"
                 id="password"
-                placeholder="At least 8 symbol" />
-            </form>
+                placeholder="Name"
+                name="password" />
+              <label for="password" class="text-primary">Password</label>
+              <!-- <p class="text-danger hide">Please, insert your name.</p> -->
+            </div>
             <button
-              class="button w-100 mt-5 shadow-lg"
-              target="_blank"
-              id="login">
+              type="submit"
+              class="btn btn-primary w-100 mt-3 py-2 fw-bold login_btn">
               Login
             </button>
           </form>
-          <p class="text-center text-white">
-            Are you new on Xabarim? Well, you can create that:
-            <a href="/pages/registration.html" target="_blank" class="text-dark"
+        </div>
+        <div class="col-12">
+          <p class="text-center fw-bolder text-secondary">
+            Don't you have an account on Xabarim? Well, you can create your
+            account:
+            <a href="/pages/registration.html" target="_blank"
               >Create account</a
             >
           </p>
         </div>
       </div>
+
       <footer class="w-100">
         <p>
           This site is made by
-          <a href="#" class="text-decoration-none" style="color: blue"
+          <a
+            href="#"
+            class="text-decoration-none"
+            style="color: rgb(249, 249, 254)"
             >Nurbek Ahmedov</a
           >. All rights reserved. 2025
         </p>

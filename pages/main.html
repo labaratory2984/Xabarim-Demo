@@ -13,7 +13,7 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous" />
   </head>
-  <body class="p-0 m-0">
+  <body class="p-0 m-0 position-relative">
     <header class="px-3 bg bg-dark">
       <nav>
         <div class="nav__box">
@@ -173,10 +173,15 @@
                       <i class="bi bi-telephone-fill"></i>
                     </a>
                     <div>
-                      <i class="bi bi-x-circle hide"></i>
+                      <i
+                        class="bi bi-x-circle hide"
+                        style="margin-right: -180px"></i>
                     </div>
                     <div>
-                      <i class="bi bi-list" id="menu-chat"></i>
+                      <i
+                        class="bi bi-list"
+                        style="margin-right: -180px"
+                        id="menu-chat"></i>
                     </div>
                   </div>
                 </div>
@@ -270,20 +275,22 @@
                 </div>
               </div>
               <!-- Input case -->
-              <div class="input__case">
-                <input
-                  type="text"
-                  name="text"
-                  class="form-control bg bg-dark border-none"
-                  placeholder="Type message"
-                  autofocus
-                  id="input_msg"
-                  autocomplete="off" />
-                <div>
-                  <div class="tools">
-                    <i class="bi bi-emoji-smile"></i>
-                    <i class="bi bi-mic-fill"></i>
-                    <i class="bi bi-send" id="send-button"></i>
+              <div class="input-wrapper">
+                <div class="input__case">
+                  <input
+                    type="text"
+                    name="text"
+                    class="form-control bg bg-dark border-none"
+                    placeholder="Type message"
+                    autofocus
+                    id="input_msg"
+                    autocomplete="off" />
+                  <div>
+                    <div class="tools">
+                      <i class="bi bi-emoji-smile"></i>
+                      <i class="bi bi-mic-fill"></i>
+                      <i class="bi bi-send" id="send-button"></i>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -409,6 +416,7 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
     <script src="/js/chats.js"></script>
     <script src="/js/api.js"></script>
     <script src="/js/profile-case.js"></script>

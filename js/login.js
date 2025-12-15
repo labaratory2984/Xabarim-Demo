@@ -1,10 +1,32 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const button = document.querySelector("button"),
-    email = document.querySelector("#email"),
-    password = document.querySelector("#password");
-
-  button.addEventListener("click", () => {
-    window.location.href = "./verification.html";
+  const parentBox = document.querySelector("#parent"),
+    loginBtn = document.querySelector(".login_btn"),
+    loginForm = document.querySelector("form");
+  loginForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const formData = new FormData(loginForm),
+      userName = formData.get("username").trim(),
+      passWord = formData.get("password").trim();
+    const fields = [
+      { name: "Username", value: userName },
+      { name: "Password", value: passWord },
+    ];
+    const emptyFields = fields.filter((f) => !f.value);
+    if (emptyFields.length > 0) {
+      const emptySides = emptyFields.map((value) => value.name).join(",");
+      const alertMessage = document.createElement("div");
+      alertMessage.innerHTML = `
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              <strong>Hey</strong> You should check in on some of those fields below: ${emptySides}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          `;
+      alertMessage.classList.add("alert-position");
+      setTimeout(() => {
+        alertMessage.remove();
+      }, 5000);
+      parentBox.prepend(alertMessage);
+      return;
+    }
   });
 });
-// Is that the way that's bingo
