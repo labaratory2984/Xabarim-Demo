@@ -7,3 +7,4 @@ window.addEventListener("DOMContentLoaded", () => {
     window.location.href = "./verification.html";
   });
 });
+// Is that the way that's bingo
