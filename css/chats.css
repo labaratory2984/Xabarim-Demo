@@ -48,12 +48,11 @@
 }
 /* messages */
 .messages {
-  height: 100vh;
+  height: auto;
+  max-height: 90%;
   padding: 0;
-  /* background-image: url("/img/chat-bg.png"); */
   display: flex;
   flex-direction: column;
-  /* gap: 8px; */
   overflow-y: auto;
   position: relative;
 }

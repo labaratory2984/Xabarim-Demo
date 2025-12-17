@@ -1,6 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
   const parentBox = document.querySelector("#parent"),
-    loginBtn = document.querySelector(".login_btn"),
     loginForm = document.querySelector("form");
   loginForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -27,6 +26,8 @@ window.addEventListener("DOMContentLoaded", () => {
       }, 5000);
       parentBox.prepend(alertMessage);
       return;
+    } else if (emptyFields.length === 0) {
+      window.location.href = "/pages/main.html";
     }
   });
 });
