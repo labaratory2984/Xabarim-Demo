@@ -1,5 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
   const parentBox = document.querySelector("body");
+  // Alert success login
   const successMessage = document.createElement("div");
   successMessage.classList.add("success__msg");
   successMessage.innerHTML = `
@@ -13,4 +14,15 @@ window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     successMessage.remove();
   }, 3000);
+  // /Alert success login
+  // Followers events:
+  const followers = document.querySelectorAll(".follower");
+  followers.forEach((event) => {
+    event.addEventListener("click", () => {
+      const cardImg = followers.querySelector("img").src;
+      const followerName =
+        followers.querySelector(".profile__name").textContent;
+      const followerStatus = followers.querySelector("span").textContent;
+    });
+  });
 });
