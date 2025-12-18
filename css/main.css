@@ -73,7 +73,7 @@ header {
   padding: 0;
   border-top: none;
 }
-.contacts {
+.followers {
   border: 2px solid rgb(171, 200, 252);
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -82,28 +82,43 @@ header {
   overflow-y: scroll;
   background-color: rgb(171, 200, 252);
 }
+.follower-item {
+  border: 2px solid greenyellow;
+  margin: 5px;
+  width: auto;
+}
+.img-follower {
+  height: 10px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.api-data p {
+  display: inline-block;
+  border: 2px solid red;
+}
 /* Scroll bar umumiy */
-.contacts::-webkit-scrollbar,
+.followers::-webkit-scrollbar,
 .messages::-webkit-scrollbar {
   width: 8px; /* kengligi */
 }
 
 /* Scrollning fon qismi */
-.contacts::-webkit-scrollbar-track,
+.followers::-webkit-scrollbar-track,
 .messages::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 10px;
 }
 
 /* Scrollning tugmasi (thumb) */
-.contacts::-webkit-scrollbar-thumb,
+.followers::-webkit-scrollbar-thumb,
 .messages::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, #ff00cc, #3333ff);
   border-radius: 10px;
 }
 
 /* Hover bo‘lganda */
-.contacts::-webkit-scrollbar-thumb:hover,
+.followers::-webkit-scrollbar-thumb:hover,
 .messages::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #ff6600, #ff0066);
 }
