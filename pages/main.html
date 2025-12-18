@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>XabarimUz</title>
+    <title>Xabarim Home</title>
     <link rel="icon" href="/img/logo-main.jpg" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/chats.css" />
@@ -32,22 +32,25 @@
     </header>
     <section class="main-section">
       <div class="container-fluid p-1">
-        <div class="row m-0 row-element" style="gap: 6px">
+        <div class="row m-0 row-element">
           <div class="col-2">
             <!-- should be hide -->
-            <button class="button-right" id="all">
-              <i class="mx-1 text-dark bi bi-chat-text-fill"></i>All Followers
+            <button
+              class="search"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Search <i class="bi bi-search"></i>
             </button>
             <button class="button-right" id="private">
-              <i class="mx-1 text-dark bi bi-envelope-at-fill"></i>
+              <i class="mx-1 bi bi-envelope-at-fill"></i>
               Private Chats
             </button>
             <button class="button-right" id="my-profile">
-              <i class="mx-1 text-dark bi bi-person-circle"></i>
+              <i class="mx-1 bi bi-person-circle"></i>
               My profile
             </button>
             <!-- Contacts side -->
-            <div class="contact__case rounded mt-1">
+            <div class="contact__case rounded mt-2 w-100">
               <h4 class="p-1 fw-bolder">All Followers</h4>
               <div class="followers mt-1"></div>
             </div>

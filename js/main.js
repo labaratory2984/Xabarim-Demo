@@ -15,6 +15,32 @@ window.addEventListener("DOMContentLoaded", () => {
     successMessage.remove();
   }, 3000);
   // /Alert success login
+  // Buttons
+  const searchBtn = document.querySelector(".search");
+  searchBtn.addEventListener("click", () => {
+    const searchModal = document.createElement("div");
+    searchModal.innerHTML = `
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" id="search-modal">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <input class="form-control">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    document.querySelector("body").append(searchModal);
+  });
   // Followers events:
   const parentFollowers = document.querySelector(".followers");
   // GET data form API
@@ -29,8 +55,8 @@ window.addEventListener("DOMContentLoaded", () => {
       <div class="d-flex">
         <img src = "/img/profile 4.png" class="img-fluid img-follower">
         <div class="api-data">
-          <p>${item.full_name}</p>
-          <p>${item.username}</p>
+          <div>${item.full_name}</div>
+          <div>${item.username}</div>
         </div>
       </div>
       `;
