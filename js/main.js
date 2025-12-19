@@ -25,15 +25,15 @@ window.addEventListener("DOMContentLoaded", () => {
         <div class="modal-dialog">
           <div class="modal-content" id="search-modal">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Search Someone</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              <input class="form-control">
+            <div class="modal-body border-none">
+              <input class="form-control outline-none">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-primary">Search <i class="bi bi-search"></i></button>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ window.addEventListener("DOMContentLoaded", () => {
         parentFollowers.append(followerItem);
       });
     });
-  // const followersClass = document.querySelectorAll(".follower");
+    // const followersClass = document.querySelectorAll(".follower");
   // followers.forEach((event) => {
   //   event.addEventListener("click", () => {
   //     const cardImg = followers.querySelector("img").src;
