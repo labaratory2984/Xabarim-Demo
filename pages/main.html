@@ -14,6 +14,80 @@
       crossorigin="anonymous" />
   </head>
   <body class="p-0 m-0 position-relative">
+    <div class="my_profile-modal hide">
+      <div class="my_profile">
+        <div class="d-flex justify-content-between w-100">
+          <div class="fs-2 fw-bold text-white p-2">My profile</div>
+          <button
+            style="
+              background: inherit;
+              border: none;
+              color: white;
+              padding: 10px;
+            "
+            class="fs-4 text-danger"
+            id="close-myProfile">
+            Close
+          </button>
+        </div>
+        <div class="profile-content">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png"
+            alt="my photo cracked your browser!"
+            class="my-photo" />
+          <div class="text-center">
+            <div class="fs-3 my-name fw-bold">Heisenberg</div>
+            <p class="text-primary fw-bolder">Online</p>
+          </div>
+          <div class="follow-numbers">
+            <div class="text-center">
+              <div class="fs-4 fw-bold follow-number">18</div>
+              <p class="text-white">Followers</p>
+            </div>
+            <div class="text-center">
+              <div class="fs-4 fw-bold follow-number">6</div>
+              <p class="text-white">Following</p>
+            </div>
+            <div class="text-center">
+              <div class="fs-4 fw-bold follow-number">0</div>
+              <p class="text-white">Posts</p>
+            </div>
+          </div>
+          <div class="text-parent">
+            <div>
+              <div class="textbox">
+                <label for="bio" class="text-white fs-4 p-1">Bio</label>
+                <textarea
+                  name="bio"
+                  id="bio"
+                  class="text-white"
+                  placeholder="Your bio is empty"></textarea>
+              </div>
+            </div>
+            <div class="rounded p-3 border border-primary">
+              <div>
+                <div class="text-white fs-4 p-1">Birth-date</div>
+                <div class="birth-date">26.04.2005</div>
+              </div>
+              <div>
+                <div class="text-white fs-4 p-1">Motherland</div>
+                <div class="birth-date">Albuquerque, New Mexico</div>
+              </div>
+            </div>
+            <!-- <div class="right-side" style="width: 200px">
+              <div class="birth-date" id="birth-date">
+                <div>Birth date:</div>
+                <span>26.04.2005</span>
+              </div>
+              <div class="motherland">
+                <div>Motherland:</div>
+                <span>U.S.A</span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="px-3 bg bg-dark">
       <nav>
         <div class="nav__box">
@@ -44,7 +118,7 @@
             <button class="simple-btn">
               <i class="mx-1 bi bi-envelope-at-fill"></i> Private Chat
             </button>
-            <button class="simple-btn">
+            <button class="simple-btn my-profile">
               <i class="mx-1 bi bi-person-circle"></i> My profile
             </button>
             <!-- Contacts side -->

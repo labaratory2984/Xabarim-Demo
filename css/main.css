@@ -10,6 +10,83 @@ body {
   flex-direction: column;
   position: relative;
 }
+/* my profile */
+.my_profile-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.my_profile {
+  height: 80%;
+  width: 40%;
+  background-color: #373636;
+  border-radius: 10px;
+  opacity: 1;
+}
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.my-photo {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border: 4px solid rgb(11, 11, 158);
+  border-radius: 50%;
+}
+.my-name {
+  color: #fcfcfe;
+}
+.follow-numbers {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+.follow-number {
+  color: cadetblue;
+}
+.text-parent {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.textbox {
+  display: flex;
+  flex-direction: column;
+  background-color: #073ddd;
+  border-color: #073ddd;
+  height: 200px;
+  width: 250px;
+  border-radius: 10px;
+}
+textarea {
+  resize: none;
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #7e7575 !important;
+  height: 82%;
+}
+textarea::placeholder {
+  color: aliceblue;
+}
+.show-modal {
+  display: flex;
+}
+.hide {
+  display: none;
+}
+/* /my profile */
 .success__msg {
   position: absolute;
   bottom: 10px;
