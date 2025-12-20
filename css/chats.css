@@ -21,8 +21,20 @@
   /* border: 2px solid goldenrod; */
 }
 .header__msg {
+  display: flex;
   background-color: rgb(56, 56, 92);
   height: 11vh;
+  gap: 0;
+}
+.img-parent {
+  width: 10%;
+  margin: 0;
+}
+.profile-img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: block;
 }
 .header__msg h6 {
   text-align: start;
