@@ -63,7 +63,7 @@ window.addEventListener("DOMContentLoaded", () => {
         parentFollowers.append(followerItem);
       });
     });
-    // const followersClass = document.querySelectorAll(".follower");
+  // const followersClass = document.querySelectorAll(".follower");
   // followers.forEach((event) => {
   //   event.addEventListener("click", () => {
   //     const cardImg = followers.querySelector("img").src;
