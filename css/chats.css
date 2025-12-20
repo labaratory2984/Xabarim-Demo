@@ -205,8 +205,6 @@
 }
 /* Profile page */
 .profile-section {
-  background-image: url("/img/profile\ page\ bg.jpg");
-  background-position: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -230,7 +228,7 @@
 }
 .birth-date {
   font-weight: 500;
-  color: rgb(22, 22, 119);
+  color: rgb(147, 147, 221);
 }
 .place {
   font-weight: 500;

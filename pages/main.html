@@ -41,13 +41,11 @@
               data-bs-target="#exampleModal">
               Search <i class="bi bi-search"></i>
             </button>
-            <button class="button-right" id="private">
-              <i class="mx-1 bi bi-envelope-at-fill"></i>
-              Private Chat
+            <button class="simple-btn">
+              <i class="mx-1 bi bi-envelope-at-fill"></i> Private Chat
             </button>
-            <button class="button-right" id="my-profile">
-              <i class="mx-1 bi bi-person-circle"></i>
-              My profile
+            <button class="simple-btn">
+              <i class="mx-1 bi bi-person-circle"></i> My profile
             </button>
             <!-- Contacts side -->
             <div class="contact__case rounded mt-2 w-100">
@@ -217,24 +215,24 @@
                 class="profile-section__img img-fluid mt-2"
                 id="profile-image" />
               <div class="text-center fs-3 fw-bold">
-                <div class="full-name"></div>
+                <div class="full-name text-white"></div>
                 <span class="text-danger hide blocked">Blocked</span>
               </div>
               <p class="mt-0 online-time">last seen 8:12 AM</p>
               <div class="row profile-section__data g-2">
                 <div class="col-12">
-                  <div class="text-start fw-bold">Bio:</div>
+                  <div class="text-start fw-bold text-white">Bio:</div>
                   <p class="text-start bio">
                     <!-- Menimcha qilib bolmaydigan ishni o'zi yo'q. -->
                   </p>
                   <div class="birthdate d-flex mt-0">
-                    <div class="text-start fw-bold">Birth info:</div>
+                    <div class="text-start fw-bold text-white">Birth info:</div>
                     <div class="birth-date mx-1">
                       <span class="day">26</span>.<span class="month">04</span
                       >.<span class="year">2005</span>
                     </div>
                   </div>
-                  <div class="place">
+                  <div class="place text-start text-white">
                     Motherland:
                     <span class="birth-place fw-bold"></span>
                   </div>
@@ -318,7 +316,9 @@
     <script src="/js/chats.js"></script>
     <script src="/js/api.js"></script>
     <script src="/js/profile-case.js"></script>
+    <!-- not used-->
     <script src="/js/my-profile.js"></script>
+    <!-- not used-->
     <!-- <script src="/js/calling.js"></script> -->
     <!--Bir kuni qoshaman buni ham calling.js ni-->
   </body>
