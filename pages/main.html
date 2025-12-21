@@ -14,7 +14,7 @@
       crossorigin="anonymous" />
   </head>
   <body class="p-0 m-0 position-relative">
-    <div class="my_profile-modal hide">
+    <div class="my_profile-modal">
       <div class="my_profile">
         <div class="d-flex justify-content-between w-100">
           <div class="fs-2 fw-bold text-white p-2">My profile</div>
@@ -53,37 +53,24 @@
               <p class="text-white">Posts</p>
             </div>
           </div>
-          <div class="text-parent">
-            <div>
-              <div class="textbox">
-                <label for="bio" class="text-white fs-4 p-1">Bio</label>
-                <textarea
-                  name="bio"
-                  id="bio"
-                  class="text-white"
-                  placeholder="Your bio is empty"></textarea>
+          <div class="text-white">
+            <div class="row">
+              <div class="col-6">
+                Bio:
+                <p class="my_profile-bio">Say my name</p>
+              </div>
+              <div class="col-6">
+                Motherland:
+                <p>Albuquerque, New Mexico</p>
+              </div>
+              <div class="col-6">
+                Birth-date:
+                <p>07.09.1958</p>
+              </div>
+              <div class="col-12 mt-2 red">
+                <div class="text-center">There is no post.</div>
               </div>
             </div>
-            <div class="rounded p-3 border border-primary">
-              <div>
-                <div class="text-white fs-4 p-1">Birth-date</div>
-                <div class="birth-date">26.04.2005</div>
-              </div>
-              <div>
-                <div class="text-white fs-4 p-1">Motherland</div>
-                <div class="birth-date">Albuquerque, New Mexico</div>
-              </div>
-            </div>
-            <!-- <div class="right-side" style="width: 200px">
-              <div class="birth-date" id="birth-date">
-                <div>Birth date:</div>
-                <span>26.04.2005</span>
-              </div>
-              <div class="motherland">
-                <div>Motherland:</div>
-                <span>U.S.A</span>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
